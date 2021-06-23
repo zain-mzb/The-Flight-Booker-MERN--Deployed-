@@ -22,7 +22,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/", indexRouter);
+
+app.use(express.static(path.join(__dirname, 'flight/build')));
+
+app.get('/', function(req,res) {
+		res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+// app.use("/", indexRouter);
 app.use("/api/users", usersRouter);
 app.use("/api/products", productsRouter);
 app.use("/api/flights", flightsRouter);
