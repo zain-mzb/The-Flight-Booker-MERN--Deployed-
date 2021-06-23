@@ -23,10 +23,22 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 
-app.use(express.static(path.join(__dirname, 'flight/build')));
+app.use(express.static(path.join(__dirname,'/flight/build')));
+
 
 app.get('/', function(req,res) {
-		res.sendFile(path.join(__dirname, 'build', 'index.html'));
+ 
+  res.sendFile(path.join(__dirname + '/index.html'))
+});
+
+app.get('/about', function(req,res) {
+  
+  res.sendFile(path.join(__dirname + '/flight/build/index.html'))
+});
+
+app.get('/contact-us', function(req,res) {
+  
+  res.sendFile(path.join(__dirname + '/flight/build/index.html'))
 });
 
 // app.use("/", indexRouter);

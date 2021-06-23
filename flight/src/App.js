@@ -19,11 +19,11 @@ import Book from "./Components/Book";
 import NewFlight from "./Components/flights/NewFlight";
 import UpdateFlight from "./Components/flights/UpdateFlight";
 import Footer from './Components/Footer'
-// import emirates from './images/emirates.png';
+
 import videoSource from './images/bgvideo.mp4';
 import About from './Components/About';
 import Contact from './Components/Contact-us'
-// import './Components/Header.css';
+
 
 function App() {
 
