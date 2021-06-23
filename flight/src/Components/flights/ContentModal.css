@@ -1,0 +1,153 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"); */
+
+/* ::-webkit-scrollbar {
+    width: 8px;
+} */
+
+
+.ContentModal__landscape {
+  object-fit: contain;
+  /* border-radius: 3px; */
+}
+
+.ContentModal__portrait {
+  display: none;
+  /* object-fit: contain; */
+  /* border-radius: 10px; */
+  /* margin-top:15px; */
+  /* border: 10px solid black; */
+  /* padding-top: -100px;  */
+  /* height: max-content; */
+}
+
+.tagline {
+  padding-bottom: 10px;
+  align-self: center;
+  font-weight: bold;
+}
+
+.ContentModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.ContentModal::-webkit-scrollbar {
+  display: none;
+}
+
+.ContentModal__about {
+  padding: 10px;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-evenly;
+  font-weight: 300;
+}
+
+.ContentModal__title {
+  height: 19%;
+  font-size: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* .ContentModal__description {
+    
+  display: flex;
+  height: 50%;
+  /* overflow-y: auto; */
+  padding: 15px;
+  border-radius: 5px;
+  scrollbar-width: thin; /* Firefox */
+  /* box-shadow: inset 0 0 5px #000000; */
+  text-align: justify;
+  /* border: 3px solid; */
+  margin-bottom: 75px;
+
+
+/* } */
+
+.ContentModal__description::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 835px) {
+  .ContentModal__landscape {
+    display: none;
+  }
+  .ContentModal__portrait {
+    display: flex;
+    width: 38%;
+  }
+  .ContentModal {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .ContentModal__about {
+    width: 58%;
+    padding: 0;
+    height: 100%;
+  }
+  .ContentModal__title {
+    font-size: 3.5vw;
+  }
+  .ContentModal__description {
+    font-size: 18px;
+  }
+}
+
+.bookbtn{
+    background-color: "green";
+}
+
+
+.airport{
+    color: blue;
+    display: inline-block;
+    margin-top:27rem;
+    position: absolute;
+    left:5.5rem;
+    font-size: 1.6rem;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* background-color: blue; */
+    margin-right: 2rem;
+    width: 35%;
+    
+
+}
+.fill img {
+    flex-shrink: 0;
+    /* min-width: 120%; */
+     min-width: 26rem;
+     min-height: 20rem; 
+    /* min-height: 200rem; */
+    /* height: 2000rem; */
+}
+
+.time{
+  /* background-color: blue; */
+  padding: 5rem;
+  color:blue;
+  font-size: 1.7rem;
+font-weight: bold;
+  
+    
+
+
+}
