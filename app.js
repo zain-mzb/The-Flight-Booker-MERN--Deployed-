@@ -31,15 +31,15 @@ app.get('/', function(req,res) {
   res.sendFile(path.join(__dirname + '/index.html'))
 });
 
-app.get('/about', function(req,res) {
+// app.get('/about', function(req,res) {
   
-  res.sendFile(path.join(__dirname + '/flight/build/index.html'))
-});
+//   res.sendFile(path.join(__dirname + '/flight/build/index.html'))
+// });
 
-app.get('/contact-us', function(req,res) {
+// app.get('/contact-us', function(req,res) {
   
-  res.sendFile(path.join(__dirname + '/flight/build/index.html'))
-});
+//   res.sendFile(path.join(__dirname + '/flight/build/index.html'))
+// });
 
 // app.use("/", indexRouter);
 app.use("/api/users", usersRouter);
