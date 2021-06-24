@@ -1,4 +1,6 @@
 {
- 
-  "jwtPrivateKey": "SomePrivateKey"
+  "db":"mongodb+srv://zb123:123@cluster0.8ambi.mongodb.net/productscrud?retryWrites=true&w=majority",
+  "jwtPrivateKey": "SomePrivateKey",
+  "port":"4000",
+  "NODE_ENV":"development"
 }
