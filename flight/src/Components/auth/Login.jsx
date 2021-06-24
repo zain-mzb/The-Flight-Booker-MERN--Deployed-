@@ -15,7 +15,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import userService from "../../services/UserService";
 import FlightLandTwoToneIcon from '@material-ui/icons/FlightLandTwoTone';
 import loginpic from '../../images/login.jpg';
-
+import { toast } from "react-toastify";
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -141,6 +141,11 @@ const Login=(props)=>{
               })
               .catch((err) => {
                 console.log(err);
+                console.log("registration error");
+                
+                toast.error(err.response.data, {
+                  position: toast.POSITION.TOP_LEFT,
+                });
               });
           }}
             >
