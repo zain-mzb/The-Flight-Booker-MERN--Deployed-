@@ -62,7 +62,7 @@ app.use(function (err, req, res, next) {
   res.render("error");
 });
 mongoose
-  .connect(config.get("db"), {
+  .connect("mongodb+srv://zb123:123@cluster0.8ambi.mongodb.net/productscrud?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
