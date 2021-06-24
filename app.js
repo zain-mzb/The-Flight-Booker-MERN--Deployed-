@@ -61,8 +61,9 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render("error");
 });
+
 mongoose
-  .connect("mongodb+srv://zb123:123@cluster0.8ambi.mongodb.net/productscrud?retryWrites=true&w=majority", {
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
