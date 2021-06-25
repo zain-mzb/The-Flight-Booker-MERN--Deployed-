@@ -207,14 +207,14 @@ const SingleFlight = (props) => {
                 <span className="ContentModal__description">
                   <div className="time" style={{textAlign:''}}>
 
-                    <div style={{color:'#3f51b5', padding:'20px', marginLeft:'-45px'}}>Scheduled Departure: <span style={{marginLeft:'15px',color: 'white', backgroundColor:'red', border: '3px black solid', padding: '3px'}}><i>{flight.departure_time}</i></span>   </div>
+                    <div style={{color:'#3f51b5', padding:'20px', marginLeft:'-45px'}}>Scheduled Departure: <span style={{marginLeft:'15px',color: 'black', backgroundColor:'', border: '', padding: '3px'}}><i>{flight.departure_time}</i></span>   </div>
                 
-                    <span style={{color:'#3f51b5', padding:'20px', marginLeft:'-45px'}}>Scheduled Arrival: <span style={{marginLeft:'15px',color: 'white', backgroundColor:'red', border: '3px black solid', padding: '3px'}}><i>{flight.arrival_time}</i></span></span>
+                    <span style={{color:'#3f51b5', padding:'20px', marginLeft:'-45px'}}>Scheduled Arrival: <span style={{marginLeft:'15px',color: 'black', backgroundColor:'', border: '', padding: '3px'}}><i>{flight.arrival_time}</i></span></span>
                     <div style={{padding:'20px', color:'#3f51b5', marginLeft:'-45px'}}>
-                    Departure From:<span style={{marginLeft:'15px',color: 'white', backgroundColor:'red', border: '3px black solid', padding: '3px'}}><i>{flight.from}</i></span>
+                    Departure From:<span style={{marginLeft:'15px',color: 'black', backgroundColor:'', border: '', padding: '3px'}}><i>{flight.from}</i></span>
                 </div>
                 <div style={{ marginLeft:'-25px',color:'#3f51b5'}}>
-                 Destination:<span style={{marginLeft:'15px',color: 'white', backgroundColor:'red', border: '3px black solid', padding: '3px'}}><i>{flight.arrival}</i></span>
+                 Destination:<span style={{marginLeft:'15px',color: 'black', backgroundColor:'', border: '', padding: '3px'}}><i>{flight.arrival}</i></span>
                   </div>
                   </div>
                  
